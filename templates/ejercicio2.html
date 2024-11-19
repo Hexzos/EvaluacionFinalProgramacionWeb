@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css">
+</head>
+<body>
+    <div class="form-group2">
+
+            <h2 class="titulo-inicio">Inicio de Sesión</h2>
+
+            <form method="post" action="/ejercicio2">
+                <div class="label-user">
+                    <label for="usuario" class="form-label">Ingresa tu nombre</label>
+                    <br>
+                    <input
+                        type="text"
+                        name="usuario"
+                        id="usuario"
+                        class="form-control"
+                        value="{{ usuario }}"
+                        required>
+                </div>
+                <div class="label-password">
+                    <label for="contrasena" class="form-label">Ingresa tu contraseña</label>
+                    <br>
+                    <input
+                        type="password"
+                        name="contrasena"
+                        id="contrasena"
+                        class="form-control"
+                        value="{{ contrasena }}"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-primary">Verificar</button>
+            </form>
+
+            {% if mensaje %}
+            <br>
+            <div class="mensaje">
+                {{ mensaje }}
+            </div>
+            {% endif %}
+
+        </div>
+
+    <button class="btn btn-secondary"><a href="/">Volver</a></button>
+</body>
+
+
+</html>

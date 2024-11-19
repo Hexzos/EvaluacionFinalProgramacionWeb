@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css">
+</head>
+<body>
+    <div class="form-group1">
+
+            <h1 class="titulo-inicio">Cálculo de compras</h1>
+
+
+            <form method="post" action="/ejercicio1">
+                <div class="label-nombre">
+                    <label for="nombre" class="form-label">Ingresa tu nombre</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" class="form-control"
+                           value="{{ nombre }}" required>
+                </div>
+                <div class="label-edad">
+                    <label for="edad" class="form-label">Ingresa tu edad</label>
+                    <br>
+                    <input type="number" name="edad" id="edad" class="form-control"
+                           value="{{ edad }}" required>
+                </div>
+                <div class="label-cantidad">
+                    <label for="cantidad_tarros" class="form-label">Ingresa la cantidad de tarros de pintura a comprar</label>
+                    <br>
+                    <input type="number" name="cantidad_tarros" id="cantidad_tarros" class="form-control"
+                           value="{{ cantidad_tarros }}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </form>
+
+
+            {% if total_con_descuento is not none %}
+            <div class="resultados">
+                <p>Nombre del cliente: {{ nombre }}</p>
+                <p>Total sin descuento: ${{ total_sin_descuento }}</p>
+                <p>El descuento es: ${{ monto_descuento }}</p>
+                <p>El total a pagar es de: ${{ total_con_descuento }}</p>
+                <a href="/ejercicio1" class="btn-third">Realizar otra compra</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <button class="btn btn-secondary"><a href="/">Volver</a></button>
+</body>
+
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0
+}
+
+.inicio {
+    margin: 35px 50px;
+
+}
+
+a {
+    color: white;
+    font-size: 16px;
+
+}
+
+.btnej1 {
+    background-color: #b00eb0;
+    border: none;
+    padding: 12px 28px;
+    text-color: white;
+    text-align: center;
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    display: inline;
+
+}
+
+
+.btnej2 {
+    margin: 20px 0;
+    background-color: #8bc820;
+    border: none;
+    padding: 12px 28px;
+    text-color: white;
+    text-align: center;
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    display: inline;
+
+
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    width: 90px;
+    height: 35px;
+    display: block;
+    margin: auto;
+}
+
+.btn-secondary {
+    background-color: #a0a0a0;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    display: block;
+    margin: 20px auto;
+
+
+}
+
+.btn-third {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    width: 90px;
+    height: 32px;
+    display: block;
+    margin: auto;
+    padding: 2px;
+    font-size: 12px;
+}
+
+
+
+.card-title {
+    text-align: left;
+
+}
+
+.form-group1 {
+    background: white;
+    border-radius: 3px;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-group2 {
+    background: white;
+    border-radius: 3px;
+    width: 480px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mensaje {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.titulo-inicio {
+    font-weight: bold;
+}
+
+.form-control {
+    margin: 20px;
+    width: 400px;
+    height: 25px;
+
+}
+
+.form-label {
+    max-width: fit-content;
+    padding: 15px;
+    color: #525557;
+}
+
